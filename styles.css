@@ -40,15 +40,16 @@ main {
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
 
+  position: relative;
+}
 .mobile {
   background-color: #f5f3f8;
   width: 250px;
   height: 500px;
 
   border: 10px solid #fff;
-  border-radius: 25px;
+  border-radius: 35px;
 
   margin-right: 8rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -60,13 +61,43 @@ main {
   border-top-right-radius: 25px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+
+  height: 80px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.mobile > header > img {
+.top {
+  background-color: #fff;
+  height: 1.2rem;
+  width: 8rem;
+  top: 0;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  position: absolute;
+}
+.back-icon,
+.profile-img,
+.profile-text,
+.menu {
+  margin-top: 20px;
+}
+.profile-img {
   width: 30px;
+  height: 30px;
   border-radius: 50px;
   border: 2px solid #fff;
+  margin-left: -32px;
+  margin-right: -32px;
 }
-
+.back-icon,
+.menu {
+  width: 10px;
+}
 .text-content {
   width: 450px;
   z-index: 1;
@@ -81,4 +112,12 @@ main {
 .text-content > p {
   color: hsl(270, 7%, 64%);
   line-height: 18pt;
+}
+.username {
+  font-size: 12px;
+  line-height: 20px;
+}
+.status {
+  font-size: 8px;
+  opacity: 0.6;
 }
