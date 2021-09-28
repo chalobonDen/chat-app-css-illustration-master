@@ -69,7 +69,8 @@ main {
   align-items: center;
 
   position: relative;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 .top {
   background-color: #fff;
@@ -207,9 +208,31 @@ main {
   margin-left: 8px;
 }
 
+.chat-input {
+  position: relative;
+  margin: 12px 0.45rem;
+}
 .chat-input > input[type='text'] {
-  margin: 0.5rem;
   border: none;
-  border-radius: 25px;
+  border-radius: 15px;
+  height: 1.5rem;
+  padding: 20px;
+  width: 100%;
+}
+.chat-input > input[type='text']::placeholder {
+  font-size: 10px;
+  color: hsl(206, 6%, 79%);
+}
+.chat-input > button {
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 4.5px;
+
+  background: #3f2552;
+  color: #fff;
+  font-weight: 500;
+  width: 30px;
   height: 30px;
+  border-radius: 100px;
+  cursor: pointer;
 }
