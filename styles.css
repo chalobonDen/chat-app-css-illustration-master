@@ -236,3 +236,44 @@ main {
   border-radius: 100px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 414px) {
+  .bg-blue {
+    left: -90px;
+    width: 300px;
+    height: 83vh;
+
+    border-bottom-right-radius: 1000px;
+  }
+  .bg-gray {
+    top: 400px;
+    right: 0px;
+    width: 200px;
+    height: 500px;
+
+    border-top-right-radius: 0;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  }
+  .text-content {
+    width: 300px;
+    text-align: center;
+  }
+  .text-content > header {
+    font-size: 2.5rem;
+  }
+  .mobile {
+    margin-right: 0;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: -100px;
+  }
+}
